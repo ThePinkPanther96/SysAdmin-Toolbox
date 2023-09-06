@@ -18,7 +18,7 @@ function Enable-Bitlocker {
     return;
   }   
 }
-##
+
 function Get-BitLockerRecoveryKey {
   try {
     Write-Host "Getting BitLocker Recovery Key..." -ForegroundColor "Yellow"
