@@ -48,11 +48,25 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 
 ### Automation
 In this part, I'll explain how to use the attached PowerShell script to utilize WinRM on a large organizational scale.
+https://github.com/ThePinkPanther96/SysAdmin-Toolbox/blob/main/WinRM%20(Windows%20Remote%20Management)/MassDeploymentScript.ps1
 
+The script's main purpose is to automate the execution of a PowerShell script on a list of remote endpoints (computers) specified in the $endpoints array. It does this by establishing remote PowerShell sessions with each endpoint and running the specified script located at $scriptPath on each remote machine.
+
+- Utilize the $scriptPath variable to specify the location of the PowerShell script file you wish to execute remotely. This script can serve various purposes such as deploying software, collecting data, or enforcing policies, etc. 
 ```nh
+# Define the path to the PowerShell script file on the local machine
+$scriptPath = "C:\Path\To\Deployment\Script" # Place here the script to execute.
 ```
 
-
+- Is an array that contains the names of the target remote computers where you want to execute the script. You can add or remove computer names from this list as needed. The script iterates through this list and executes the script on each computer.
+```nh
+# Define the list of target endpoints
+$endpoints = @(
+    "COMPUTER-1","COMPUTER-2","COMPUTER-3","COMPUTER-4",
+    "COMPUTER-5","COMPUTER-6","COMPUTER-7","COMPUTER-8",
+    "COMPUTER-9","AND-SO-ON","AND-SO-ON"
+)
+```
 
 
 
