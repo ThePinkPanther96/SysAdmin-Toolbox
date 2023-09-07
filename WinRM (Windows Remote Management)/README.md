@@ -9,6 +9,7 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 - Basic understanding of PowerShell.
 - Basic understanding of network protocols.
 
+
 # Configuration
 1. Enter Group Policy Management
 2. Under Group Policy Objects OU create a new policy object.
