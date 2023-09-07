@@ -74,7 +74,7 @@ $endpoints = @(
 1. Defines a list of target computers (endpoints) in the $endpoints array.
 2. Specify the path to a PowerShell script file ($scriptPath) on the local machine that you want to run remotely on these target computers.
 3. Goes through each computer in the list, one by one:
-   a. It tries to establish a remote connection (PowerShell session) to the current computer in the list.
+   	○ It tries to establish a remote connection (PowerShell session) to the current computer in the list.
    b. Runs the specified PowerShell script (located at $scriptPath) on the remote computer.
    c. Check if the script executed successfully and displays a message accordingly.
    d. If there's an issue connecting to or running the script on a computer, it displays an error message and continues to the next computer.
