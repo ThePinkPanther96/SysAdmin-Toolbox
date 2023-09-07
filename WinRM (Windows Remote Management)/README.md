@@ -28,9 +28,9 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 
 ### Allow for inbound remote administration by updating the firewall rules:
 1. Navigate to Computer Configuration > Policies > Administrative Templates: Policy definitions > Network > Network Connections > Windows Firewall > Domain Profile
-2. Enable the following policies: 
-	  ○ Windows Firewall: Allow inbound remote administration exception	
-	  ○ Windows Firewall: Allow ICMP exception
+2. Enable the following policies:
+   - Windows Firewall: Allow inbound remote administration exception
+   - Windows Firewall: Allow ICMP exception
 
 ### Create  new inbound firewall rules:
 1. Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security > Windows Firewall with Advanced Security > Inbound Rules
