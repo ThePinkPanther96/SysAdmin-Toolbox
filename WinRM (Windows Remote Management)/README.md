@@ -46,9 +46,11 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 2. Right-click on the selected OU and select Link existing GPO…
 3. Select the GPO 
 
+### Automation
+In this part, I'll explain how to use the attached PowerShell script to utilize WinRM on a large organizational scale.
 
-
-
+```nh
+```
 
 
 
