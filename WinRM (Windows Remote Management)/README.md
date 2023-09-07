@@ -7,7 +7,7 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 - Working in Active Directory environment.
 - Windows-based endpoints connected to an organizational network.
 - Basic understanding of PowerShell.
-
+- Basic understanding of network protocols.
 
 # Configuration
 1. Enter Group Policy Management
