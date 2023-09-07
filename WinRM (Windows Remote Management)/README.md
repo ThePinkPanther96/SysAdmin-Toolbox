@@ -4,7 +4,7 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 
 
 ## Requirement
-- Working in Active Directory environment.
+- Familiarity with Active Directory\Windows environment.
 - Windows-based endpoints connected to an organizational network.
 - Basic understanding of PowerShell.
 - Basic understanding of network protocols.
@@ -70,4 +70,19 @@ $endpoints = @(
 )
 ```
 
+### The script workflow
+1. Defines a list of target computers (endpoints) in the $endpoints array.
+2. Specify the path to a PowerShell script file ($scriptPath) on the local machine that you want to run remotely on these target computers.
+3. Goes through each computer in the list, one by one:
+	a. It tries to establish a remote connection (PowerShell session) to the current computer in the list.
+	b. Runs the specified PowerShell script (located at $scriptPath) on the remote computer.
+	c. Check if the script executed successfully and displays a message accordingly.
+	d. If there's an issue connecting to or running the script on a computer, it displays an error message and continues to the next computer.
+	e. Finally, it closes the remote connection (PowerShell session) if it was successfully established.
+
+In essence, the script automates the process of running a PowerShell script on a list of remote computers, reporting on the success or failure of each execution, and managing the remote connections. It can be used for various tasks like deploying software, gathering data, or enforcing policies on multiple computers simultaneously.
+
+### Examples 
+Refer to my other repository, 'SysAdmin-Toolbox/Automation & Data Collection,' to view example scripts that were used in a production environment:
+https://github.com/ThePinkPanther96/SysAdmin-Toolbox/tree/main/Automations%20%26%20Data%20Collection
 
