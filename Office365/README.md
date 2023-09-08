@@ -70,6 +70,11 @@ $file = '\Search_Results.csv'
   8. The script will display a connection status indicating whether you are connected to Microsoft Exchange Online. Ensure that the status is "Connected to Exchange" before proceeding.
 
 
+
+
+
+# GetMsolUserReport
+## Introduction
      
 
 
