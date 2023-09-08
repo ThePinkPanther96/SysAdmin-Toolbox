@@ -12,9 +12,9 @@ Inital release
 
 
 #Import-Module MSOnline
-<#$SecPass = ConvertTo-SecureString "Nonstop@" -AsPlainText -Force
-$O365Cred = New-Object System.Management.Automation.PSCredential ("iditb@hmc.co.il", $SecPass)
-$O365Session = New-PSSession –ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential $O365Cred -Authentication Basic -AllowRedirection
+<#$SecPass = ConvertTo-SecureString "<Password>" -AsPlainText -Force
+$O365Cred = New-Object System.Management.Automation.PSCredential ("YourEmail@Example.com", $SecPass)
+$O365Session = New-PSSession ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential $O365Cred -Authentication Basic -AllowRedirection
 Import-PSSession $O365Session
 Connect-MsolService -Credential $O365Cred#>
 
