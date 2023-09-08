@@ -39,9 +39,9 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 ### Create  new inbound firewall rules:
 1. Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security > Windows Firewall with Advanced Security > Inbound Rules
 2. Create the following inbound rule:
-- Name: WinRM
-- Ports: 80, 443, 5985, 5956
-- Protocol: TCP
+   - Name: WinRM
+   - Ports: 80, 443, 5985, 5956
+   - Protocol: TCP
 
 4. Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Network List Manager Policies
 5. Right-click Unidentified Networks and click Properties
