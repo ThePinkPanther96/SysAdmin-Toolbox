@@ -42,6 +42,7 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 - Name: WinRM
 - Ports: 80, 443, 5985, 5956
 - Protocol: TCP
+
 4. Navigate to Computer Configuration > Policies > Windows Settings > Security Settings > Network List Manager Policies
 5. Right-click Unidentified Networks and click Properties
 
