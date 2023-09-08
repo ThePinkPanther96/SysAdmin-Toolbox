@@ -29,6 +29,7 @@ Import-Module MSOnline
 ```
 
 
+
 2. Create secure credentials. Replace "YourUsername@YourDomain.com" and "YourPassword" with your Office 365 account credentials.
    Ensure your password is stored securely as a secure string:
 ```nh
@@ -37,16 +38,19 @@ $O365Cred = New-Object System.Management.Automation.PSCredential ("YourUsername@
 ```
 
 
+
 3. Create a remote PowerShell session to connect to Exchange Online. Provide the necessary configuration details, including the Connection URI:
 ```nh
 $O365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential $O365Cred -Authentication Basic -AllowRedirection
 ```
 
 
+
 4. Import the PowerShell session you just created. This allows you to use Exchange Online cmdlets in your current PowerShell session:
 ```nh
 Import-PSSession $O365Session
 ```
+
 
 
 5. Finally, connect to Microsoft Online Services (such as Azure AD) using your credentials. This step may be necessary for certain management tasks:
