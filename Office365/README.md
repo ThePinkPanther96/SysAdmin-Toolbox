@@ -22,9 +22,9 @@ Connect-MsolService -Credential $O365Cred
 ```
 ### Let's break it down
 1. Import the "MSOnline" module to enable Microsoft 365 and Exchange Online management functions:
-```nh
-Import-Module MSOnline
-```
+   ```nh
+   Import-Module MSOnline
+   ```
 2. Create secure credentials. Replace "YourUsername@YourDomain.com" and "YourPassword" with your Office 365 account credentials.
    Ensure your password is stored securely as a secure string:
 ```nh
