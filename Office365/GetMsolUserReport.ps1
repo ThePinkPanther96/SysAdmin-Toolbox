@@ -1,8 +1,8 @@
 #------------------------------------------------------------------------------
 #
-# Copyright © 2012 Microsoft Corporation.  All rights reserved.
+# Copyright ï¿½ 2012 Microsoft Corporation.  All rights reserved.
 #
-# THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED “AS IS” WITHOUT
+# THIS CODE AND ANY ASSOCIATED INFORMATION ARE PROVIDED ï¿½AS ISï¿½ WITHOUT
 # WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
 # LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
 # FOR A PARTICULAR PURPOSE. THE ENTIRE RISK OF USE, INABILITY TO USE, OR 
@@ -51,7 +51,7 @@
 		using Connect-MsolService, and when connecting to Exchange Online (https://ps.outlook.com/powershell).
 
 	.PARAMETER OutputFile
-		Specifies the name of the output file.  The arguement can be the full path including the file
+		Specifies the name of the output file. The arguement can be the full path including the file
 		name, or only the path to the folder in which to save the file (uses default name).
 		
 		Default filename is in the format of "YYYYMMDDhhmmss_MsolUserReport.csv"
