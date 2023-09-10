@@ -94,7 +94,7 @@ If a credential is not specified, an attempt is made to connect to Exchange Onli
 ## Parameter output
 Specifies the name of the output file. The argument can be the full path including the file name, or only the path to the folder in which to save the file (uses the default name). The default filename is in the format of "YYYYMMDDhhmmss_MsolUserReport.csv"
 
-* Additional details and examples are provided in the code. *
+#### * Additional details and examples are provided in the code. *
 
 
 ## Configuration
