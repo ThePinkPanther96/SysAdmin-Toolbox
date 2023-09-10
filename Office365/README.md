@@ -100,7 +100,7 @@ Specifies the name of the output file. The argument can be the full path includi
 ## Configuration
 Here are examples for few of the key functions in the code:
 
-### Use the discretion and examples in 'ConnectProvisioningWebServiceAPI' function for connecting to Office 365 provisioning web service API:
+#### Use the discretion and examples in 'ConnectProvisioningWebServiceAPI' function for connecting to Office 365 provisioning web service API:
 ```
 Function ConnectProvisioningWebServiceAPI
 {
@@ -141,7 +141,7 @@ Function ConnectProvisioningWebServiceAPI
 	#>
 ```
 
-Use the discretion and examples in 'ConnectExchangeOnline' function for Connecting to the Exchange Online PowerShell web service:
+#### Use the discretion and examples in 'ConnectExchangeOnline' function for Connecting to the Exchange Online PowerShell web service:
 ```
 Function ConnectExchangeOnline
 {
@@ -182,7 +182,7 @@ Function ConnectExchangeOnline
 # Rest of the code...
 ```
 
-### Use the discretion and examples in 'GetUser' function for getting information for a specific user account:
+#### Use the discretion and examples in 'GetUser' function for getting information for a specific user account:
 ```
 Function GetUser
 {
@@ -213,7 +213,7 @@ Function GetUser
 
 ```     
 
-### Use the discretion and examples in 'GetUser' function for getting recipient information:
+#### Use the discretion and examples in 'GetUser' function for getting recipient information:
 ```
 Function GetRecipient
 {
@@ -242,7 +242,7 @@ Function GetRecipient
 	#>
 ```
 
-### Use the discretion and examples in 'GetUser' function for getting mailbox-enabled user information:
+#### Use the discretion and examples in 'GetUser' function for getting mailbox-enabled user information:
 ```
 Function GetMailbox
 {
@@ -271,7 +271,7 @@ Function GetMailbox
 # Rest of the code...
 ```
 
-### Use the discretion and examples in 'GetSecondarySMTPAddresses' function for getting information regarding secondary mailboxes: 
+#### Use the discretion and examples in 'GetSecondarySMTPAddresses' function for getting information regarding secondary mailboxes: 
 ```
 Function GetSecondarySMTPAddresses
 {
@@ -301,6 +301,6 @@ Function GetSecondarySMTPAddresses
 # Rest of the code...
 ```
 
-### Please read the comments and descriptions within the code carefully to gain a deeper understanding of each function and its purpose. Each function is accompanied by its own description and examples, making it accessible even to those without extensive expertise in PowerShell or Office 365 services.
+#### Please read the comments and descriptions within the code carefully to gain a deeper understanding of each function and its purpose. Each function is accompanied by its own description and examples, making it accessible even to those without extensive expertise in PowerShell or Office 365 services.
 
 
