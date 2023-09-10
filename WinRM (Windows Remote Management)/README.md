@@ -54,8 +54,7 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 
 
 ### Automation
-In this part, I'll explain how to use the attached PowerShell script to utilize WinRM on a large organizational scale.
-https://github.com/ThePinkPanther96/SysAdmin-Toolbox/blob/main/WinRM%20(Windows%20Remote%20Management)/MassDeploymentScript.ps1
+In this part, I'll explain how to use the attached [MassDeploymentScript.ps1](https://github.com/ThePinkPanther96/SysAdmin-Toolbox/blob/main/WinRM%20(Windows%20Remote%20Management)/MassDeploymentScript.ps1) PowerShell script to utilize WinRM on a large organizational scale.
 
 The script's main purpose is to automate the execution of a PowerShell script on a list of remote endpoints (computers) specified in the $endpoints array. It does this by establishing remote PowerShell sessions with each endpoint and running the specified script located at $scriptPath on each remote machine.
 
