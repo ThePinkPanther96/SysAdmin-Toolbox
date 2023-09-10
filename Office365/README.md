@@ -97,8 +97,8 @@ Specifies the name of the output file. The argument can be the full path includi
 ### Additional details and examples are provided in the code. 
 
 
-## Configuration
-Here are examples for few of the key functions in the code:
+## Usage
+Here are examples of a few of the key functions in the code:
 
 #### Use the discretion and examples in 'ConnectProvisioningWebServiceAPI' function for connecting to Office 365 provisioning web service API:
 ```
