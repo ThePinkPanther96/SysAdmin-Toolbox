@@ -54,8 +54,7 @@ In this tutorial, I will guide you through the process of configuring WinRM (Win
 
 
 ### Automation
-In this part, I'll explain how to use the attached PowerShell script to utilize WinRM on a large organizational scale.
-https://github.com/ThePinkPanther96/SysAdmin-Toolbox/blob/main/WinRM%20(Windows%20Remote%20Management)/MassDeploymentScript.ps1
+In this part, I'll explain how to use the attached [MassDeploymentScript.ps1](https://github.com/ThePinkPanther96/SysAdmin-Toolbox/blob/main/WinRM%20(Windows%20Remote%20Management)/MassDeploymentScript.ps1) PowerShell script to utilize WinRM on a large organizational scale.
 
 The script's main purpose is to automate the execution of a PowerShell script on a list of remote endpoints (computers) specified in the $endpoints array. It does this by establishing remote PowerShell sessions with each endpoint and running the specified script located at $scriptPath on each remote machine.
 
@@ -90,6 +89,5 @@ $endpoints = @(
 In essence, the script automates the process of running a PowerShell script on a list of remote computers, reporting on the success or failure of each execution, and managing the remote connections. It can be used for various tasks like deploying software, gathering data, or enforcing policies on multiple computers simultaneously.
 
 ### Examples 
-Refer to my other repository, 'SysAdmin-Toolbox/Automation & Data Collection,' to view example scripts that were used in a production environment:
-https://github.com/ThePinkPanther96/SysAdmin-Toolbox/tree/main/Automations%20%26%20Data%20Collection
+Refer to my other repository, [SysAdmin-Toolbox/Automation & Data Collection](https://github.com/ThePinkPanther96/SysAdmin-Toolbox/tree/main/Automations%20%26%20Data%20Collection), to view example scripts that were used in a production environment:
 
