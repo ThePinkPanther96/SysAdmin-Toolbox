@@ -60,21 +60,21 @@ The script's main purpose is to automate the execution of a PowerShell script on
 
 - Utilize the $scriptPath variable to specify the location of the PowerShell script file you wish to execute remotely. This script can serve various purposes such as deploying software, collecting data, enforcing policies, etc.
   
-```nh
-# Define the path to the PowerShell script file on the local machine
-$scriptPath = "C:\Path\To\Deployment\Script" # Place here the script to execute.
-```
+   ```nh
+   # Define the path to the PowerShell script file on the local machine
+   $scriptPath = "C:\Path\To\Deployment\Script" # Place here the script to execute.
+   ```
 
 - Is an array that contains the names of the target remote computers where you want to execute the script. You can add or remove computer names from this list as needed. The script iterates through this list and executes the script on each computer.
 
-```nh
-# Define the list of target endpoints
-$endpoints = @(
-    "COMPUTER-1","COMPUTER-2","COMPUTER-3","COMPUTER-4",
-    "COMPUTER-5","COMPUTER-6","COMPUTER-7","COMPUTER-8",
-    "COMPUTER-9","AND-SO-ON","AND-SO-ON"
-)
-```
+   ```nh
+   # Define the list of target endpoints
+   $endpoints = @(
+       "COMPUTER-1","COMPUTER-2","COMPUTER-3","COMPUTER-4",
+       "COMPUTER-5","COMPUTER-6","COMPUTER-7","COMPUTER-8",
+       "COMPUTER-9","AND-SO-ON","AND-SO-ON"
+   )
+   ```
 
 ### The script workflow
 1. Defines a list of target computers (endpoints) in the $endpoints array.
