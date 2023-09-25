@@ -90,4 +90,3 @@ In essence, the script automates the process of running a PowerShell script on a
 
 ### Examples 
 Refer to my other repository, [SysAdmin-Toolbox/Automation & Data Collection](https://github.com/ThePinkPanther96/SysAdmin-Toolbox/tree/main/Automations%20%26%20Data%20Collection), to view example scripts that were used in a production environment.
-
