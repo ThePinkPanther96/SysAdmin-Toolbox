@@ -38,10 +38,3 @@ You can customize the *$FileName* and *$OutputPath* in this code block:
   ```
 
   ## PING_CONPUTER.ps1
-
-
-
-
-
-
-
