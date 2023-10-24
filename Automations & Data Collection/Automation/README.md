@@ -27,7 +27,7 @@ It can also be extended to other drives as shown in this code block:
           }
         }
   ```
-The recovery keys are used in case a user forgets their BitLocker password and needs to recover data.
+  The recovery keys are used in case a user forgets their BitLocker password and needs to recover data.
 
 - Export BitLocker Recovery Key to CSV: This function exports the BitLocker recovery keys obtained in the previous step to a CSV file. It includes the computer name and recovery key information. If the CSV file for the current date doesn't exist, it creates a new file. If it already exists, it appends the new entries to the existing file.
 You can customize the *$FileName* and *$OutputPath* in this code block:
