@@ -10,10 +10,10 @@ In this tutorial, I will guide you through a series of automation scripts in thi
 This script is as simple as it gets. It's divided into three functions: 
 - Enable BitLocker: This function checks if BitLocker is currently disabled on the "C:" drive (Or any other drive for that matter). If it's disabled, it activates BitLocker on the drive with certain settings. After enabling BitLocker, it resumes BitLocker on the specified drive.
 It can also be extended to other drives as shown in this code block:
-```ps1
- Enable-BitLocker -MountPoint "C:" -SkipHardwareTest -RecoveryPasswordProtector
- Resume-BitLocker -MountPoint "C:"
- # Add another MountPoint here. Follow the example:
- # Enable-BitLocker -MountPoint "D:" -SkipHardwareTest -RecoveryPasswordProtector
- # Resume-BitLocker -MountPoint "D:"
-```
+ ```ps1
+  Enable-BitLocker -MountPoint "C:" -SkipHardwareTest -RecoveryPasswordProtector
+  Resume-BitLocker -MountPoint "C:"
+  # Add another MountPoint here. Follow the example:
+  # Enable-BitLocker -MountPoint "D:" -SkipHardwareTest -RecoveryPasswordProtector
+  # Resume-BitLocker -MountPoint "D:"
+ ```
