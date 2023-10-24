@@ -7,6 +7,9 @@ function Enable-Bitlocker {
       Write-Host "Activating BitLocker..." -ForegroundColor "Yellow"
       Enable-BitLocker -MountPoint "C:" -SkipHardwareTest -RecoveryPasswordProtector
       Resume-BitLocker -MountPoint "C:"
+      # Add another MountPoint here. Follow the example:
+      # Enable-BitLocker -MountPoint "D:" -SkipHardwareTest -RecoveryPasswordProtector
+      # Resume-BitLocker -MountPoint "D:"
       Write-Host "BitLocker was activated successfully" -ForegroundColor "Green"
     }
     catch {
