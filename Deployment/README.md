@@ -89,5 +89,5 @@ Nothing to do here.
 
 
 ### Extra Tip
-If you intend to utilize this script within an Active Directory environment, I recommend reviewing my tutorial on configuring [WinRM](https://github.com/ThePinkPanther96/SysAdmin-Toolbox/tree/main/WinRM%20(Windows%20Remote%20Management)) (Windows Remote Management) and leveraging it for the execution of deployment scripts. 
+If you intend to utilize this script within an Active Directory environment, I recommend reviewing my tutorial on configuring [WinRM (Windows Remote Management)](https://github.com/ThePinkPanther96/SysAdmin-Toolbox/tree/main/WinRM%20(Windows%20Remote%20Management)) and leveraging it for the execution of similar deployment scripts. 
   
