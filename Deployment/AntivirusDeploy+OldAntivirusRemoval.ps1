@@ -56,7 +56,7 @@ function Get-Files {
     The name of the AWS S3 bucket.
 }
 
-function Install-Software {
+function InstallXDR {
 
     .SYNOPSIS
     Installs SentinelOne Agent on the system.
@@ -71,6 +71,9 @@ function Install-Software {
 
     .PARAMETER installerPath
     The path to the SentinelOne Agent installer.
+
+    .PARAMETER sitToken
+    SentinelOne API Token.
     
     .EXAMPLE
     InstallXDR -installerPath "C:\Installer\SentinelOneInstaller.exe"
@@ -96,7 +99,8 @@ if ($MyInvocation.CommandOrigin -eq 'Runspace'){
         -Key "hvhgHG787JF%67g$^" `
         -SecretKey "&^6$%$#^&V%^$c%4^5C8&b87^O7V" `
     
-    InstallXDR -installerPath $Paths
+    InstallXDR -installerPath $Paths `
+        -siteToken "V%^$c%4^87JF%6HJGJ8&65*&6*" # Insert SentinelOne API token.
 
 #>
 
@@ -167,7 +171,8 @@ function Get-Files {
 
 function InstallXDR {
     param (
-        [string]$installerPath
+        [string]$installerPath,
+        [string]$siteToken
     )
     $SentinelInstances = Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -like "*Sentinel Agent*"}
     if ($SentinelInstances) {
@@ -177,7 +182,6 @@ function InstallXDR {
     else {
         try {
             Write-Host "Installing SentinelOne..."
-            $siteToken = "API_TOKEN" # Insert SentinelOne API token.
             $arguments = "-t", "$siteToken", "-q"
             Start-Process -FilePath $installerPath -ArgumentList $arguments -Wait
             $SentinelInstances = Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -like "Sentinel Agent"}
@@ -206,6 +210,7 @@ if ($MyInvocation.CommandOrigin -eq 'Runspace'){
         -Key "KEY" `
         -SecretKey "SECRET KEY" `
     
-    InstallXDR -installerPath $Paths
+    InstallXDR -installerPath $Paths `
+        -siteToken "API_TOKEN" # Insert SentinelOne API token.
 }
 
