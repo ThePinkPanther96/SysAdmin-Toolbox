@@ -35,8 +35,10 @@ In this section, we will configure a new S3 Bucket with the correct permissions,
 3. Select **"Add user to group" > select the group that you created previously > click "Next"**
 4. Under **"Key"** write **"Name"** and under Value Write the name of the new **IAM user > click "Next"**
 5. Review the user settings and click **"Create user"**
+6. Enter the new user > navigate to **"Security credentials"** > scroll down and click on **Create access key**
+7. Save both **Access key** and **Secret Access Key**. They will be used later.
 
-## Execute the script
+## About the script
 The script is structured with three distinct functions, each serving a specific purpose. 
 ### DeleteESET
 This function performs the following tasks:
@@ -56,9 +58,32 @@ This function is responsible for the following operations:
 
 By executing these functions, the script effectively manages the uninstallation of ESET, facilitates the deployment of required files from an S3 bucket, and ensures the installation of the SentinelOne Agent, thereby contributing to the overall security and integrity of the system.
 
+## Executing the script
+Open the script and scroll down to the end of the script. 
 
+### $Paths
+is a list of the deployment destinations on the local machine. 
+To deploy correctly, you must specify the path for deployment, 
+as well as the precise names of the objects as they are named in the deployment S3 Bucket
+See example:
 
+```$Paths = @("C:\Windows\Temp\SentinelOneInstaller_windows_64bit_v22_3_5_887.exe")```
 
+### Function DeleteESET
+Nothing to do here. 
 
+### Function Get-Files
+- Replace **"BUCKET NAME"** with the name of the deployment bucket.
+- Replace **"KEY"** with  the IAM user Access Key.
+- Replace **SECRET KEY** with the IAM user Secret Access Key.
 
+  See example:
+  ```Get-Files -TargetPaths $Paths -BucketNmae "BUCKET NAME" -Key "KEY" -SecretKey "SECRET KEY" ```
 
+### Function InstallXDR
+- Replace **"API_TOKEN"** with the SentinelOne API Token.
+
+  See example:
+  ```InstallXDR -installerPath $Paths -siteToken "API_TOKEN"```
+
+  
