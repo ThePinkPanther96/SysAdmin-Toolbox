@@ -3,9 +3,9 @@
 ## Introduction
 In one of my positions as a System Administrator, I was tasked with replacing the company's endpoint security antivirus. In this case, the antivirus to be replaced was ESET, and the new solution chosen was SentinelOne XDR. Instead of manually handling each endpoint, I decided to write a script to automate the process. In this tutorial, I will guide you through the steps of uninstalling the ESET antivirus, downloading the XDR installation from the AWS S3 Bucket, and installing it on the system.
 
-Please note that the 'Get-Files' function can be utilized for downloading any type of data from an S3 Bucket and can serve other organizational needs.
+**Please note that the 'Get-Files' function can be utilized for downloading any type of data from an S3 Bucket and implemented into different scripts and serve other organizational needs.**
 
-Similarly, the 'InstallXDR' function can be easily adjusted to function as an installer for other applications.
+**Similarly, the 'InstallXDR' function can be easily adjusted to function as an installer for other applications.**
 
 ## Requirements
 - Active AWS account with administrative privileges.
@@ -37,3 +37,28 @@ In this section, we will configure a new S3 Bucket with the correct permissions,
 5. Review the user settings and click **"Create user"**
 
 ## Execute the script
+The script is structured with three distinct functions, each serving a specific purpose. 
+### DeleteESET
+This function performs the following tasks:
+- Checks if ESET Endpoint Antivirus is installed.
+- Retrieves uninstallation information for ESET.
+- Uninstall ESET components silently, including agents and security installations.
+- Verifies the successful uninstallation.
+### Get-Files
+- The Get-Files function downloads files from an AWS S3 bucket and checks their existence at the target paths.
+  If the files already exist, it prints a message; otherwise, it downloads and verifies their deployment.
+  This function is for deploying the needed object from a S3 Bucket.
+### InstallXDR
+This function is responsible for the following operations:
+- Checks if SentinelOne Agent is installed.
+- Installs using the provided installer path and site token.
+- Verifies installation success.
+
+By executing these functions, the script effectively manages the uninstallation of ESET, facilitates the deployment of required files from an S3 bucket, and ensures the installation of the SentinelOne Agent, thereby contributing to the overall security and integrity of the system.
+
+
+
+
+
+
+
